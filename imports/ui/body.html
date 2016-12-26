@@ -1,0 +1,35 @@
+ <body>
+   <div class="container">
+    {{> loginButtons}}
+     <header> 
+
+       <h1>Добавить новую книгу</h1>
+
+       <form class="new-book">
+<input type="text" name="avt" placeholder="Введите автора книги" />
+<input type="text" name="naz" placeholder="Введите название книги" />
+<input type="text" name="izd" placeholder="Введите издательство книги" />
+
+<button id="submit-post" class="button radius">Добавить</button>
+        </form>
+
+     </header>
+
+
+<label class="hide-completed"> 
+       <input type="checkbox" />
+        Не отображать
+      </label>
+     <ul>
+       {{#each books}}
+         {{> bookk}}
+       {{/each}}
+     </ul>
+   </div>
+ </body>
+ 
+
+ <template name="book">
+ <li>{{text}}</li>
+
+ </template>

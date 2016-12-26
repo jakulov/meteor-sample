@@ -1,0 +1,175 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f4ff;
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.column {
+  max-width: 200px;
+  min-width: 200px;
+  margin: 7px;
+  max-height: 40px;
+  min-height: 40px;
+}
+ 
+header {
+
+background: #FFFFFF;
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 100px;
+  margin: 0px 200px 0px 200px;
+
+}
+#login-buttons {
+  display: block;
+  margin: 10px 0px 10px 0px;
+text-align: left;
+}
+ 
+h1 {
+  font-size: 19px;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin: center;
+}
+ 
+form {
+  margin: center;
+  margin-bottom: center;
+  position: relative;
+
+
+} 
+
+
+.new-book input {
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding:center;
+  font-size: 15px;
+  text-align: center;
+  
+}
+ 
+.new-book input:focus{
+  outline: 0;
+}
+ 
+ul {
+ 
+  margin: 10px 0px 10px 0px;
+  padding: 0;
+  background: white;
+}
+ 
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+li {
+background: #FFFFFF;
+  position: relative;
+  list-style: none;
+  padding: 15px;
+ float:left;
+ margin-bottom:20px;
+ margin-right:20px;
+}
+ 
+li .avt {
+  padding: 5px;
+  position: relative;
+  display: block;
+  text-align: left;
+  font-weight: 100px;
+
+
+}
+
+li .naz {
+
+  padding: 5px;
+  position: relative;
+  display: block;
+  text-align: left;
+  font-weight: 100px;
+
+ 
+}
+
+li .izd {
+  padding: 5px;
+  position: relative;
+  display: block;
+  text-align: left;
+  font-weight: 100px;
+ 
+} 
+
+li.checked {
+  color: #888;
+
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+
+}
+ 
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+ 
+header .hide-completed {
+  margin: 10px 0px 10px 0px;
+  float: right;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+ 
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-book input {
+    padding-bottom: 5px;
+  }
+}

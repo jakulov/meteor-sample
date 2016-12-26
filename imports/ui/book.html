@@ -1,0 +1,27 @@
+<template name="bookk">
+  <li class="{{#if checked}}checked{{/if}}">
+ {{#if currentUser}}
+    <button class="delete">&times;</button>
+ {{/if}}
+
+    <input type="button" class="edit" value="Редектировать" />
+   
+
+<div class="column">
+   <span class="avt">{{text}}</span></div>
+  <div class="column"> <span class="naz">{{textt}}</span></div>
+  <div class="column"> <span class="izd">{{txt}}</span>
+</div>
+</li>
+
+
+    {{#if bookEdit}}
+    <form class="edit-book" name="edit">
+        <input type="text" name="avt" placeholder="Автор книги" value="{{text}}" /><br>
+        <input type="text" name="naz" placeholder="Название" value="{{textt}}" /><br>
+        <input type="text" name="izd" placeholder="Издательство" value="{{txt}}" /><br>
+        <button id="submit-edit" class="button radius">Сохранить</button>
+    </form>
+    {{/if}}
+
+</template>
